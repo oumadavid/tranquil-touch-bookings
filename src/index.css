@@ -8,35 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Spa-inspired color palette */
+    --background: 35 50% 98%;
+    --foreground: 200 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 40% 99%;
+    --card-foreground: 200 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 40% 99%;
+    --popover-foreground: 200 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 95 25% 45%;  /* Sage green */
+    --primary-foreground: 35 40% 99%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 25% 92%;  /* Warm cream */
+    --secondary-foreground: 200 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 20% 95%;
+    --muted-foreground: 200 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 70%;  /* Soft gold */
+    --accent-foreground: 200 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 40% 99%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 95 25% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Spa-specific design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--secondary)));
+    --shadow-soft: 0 10px 30px -10px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
